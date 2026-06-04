@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artistas Musicales — Proyecto Escolar</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Animación de entrada */
+    .artist-card { opacity: 0; transform: translateY(40px); animation: fadeUp 0.8s ease forwards; }
+    .artist-card:nth-child(1) { animation-delay: 0.1s; }
+    .artist-card:nth-child(2) { animation-delay: 0.3s; }
+    .artist-card:nth-child(3) { animation-delay: 0.5s; }
+
+    .home-hero h1 { opacity: 0; animation: fadeUp 1s ease 0.1s forwards; }
+    .home-hero .subtitle { opacity: 0; animation: fadeUp 1s ease 0.3s forwards; }
+    .school-brand { opacity: 0; animation: fadeIn 0.8s ease 0.2s forwards; }
+    .home-footer { opacity: 0; animation: fadeIn 1s ease 0.8s forwards; }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    /* Línea decorativa hero */
+    .hero-line {
+      width: 1px;
+      height: 60px;
+      background: linear-gradient(to bottom, transparent, var(--sky_blue));
+      margin: 24px auto 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="home-header">
+    <div class="school-brand">
+      <span class="school-name">COLEGIO<br>DE BACHILLERES<br>DEL ESTADO DE QUERETARO</span>
+      <div class="school-logo-box">
+        <img src="images/logo-colegio.png" alt="Logo">
+        LOGO
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="home-hero">
+    <h1>Íconos<br><span>de la Música</span></h1>
+    <p class="subtitle">Historia · Discografía · Legado</p>
+    <div class="hero-line"></div>
+  </section>
+
+  <!-- ARTISTAS -->
+  <section class="artists-section">
+
+    <!-- Luis Miguel -->
+    <a href="pages/luis-miguel.html" class="artist-card">
+      <img class="card-img"
+           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Luis_Miguel_2023.jpg/800px-Luis_Miguel_2023.jpg"
+           alt="Luis Miguel"
+           onerror="this.src='https://via.placeholder.com/600x900/1a1a1a/c9a84c?text=Luis+Miguel'">
+      <div class="card-overlay">
+        <h2>Luis Miguel</h2>
+        <span class="tag">El Sol de México</span>
+        <p class="cta">Ver más →</p>
+      </div>
+    </a>
+
+    <!-- Michael Jackson -->
+    <a href="pages/michael-jackson.html" class="artist-card">
+      <img class="card-img"
+           src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Michael_Jackson_in_1988.jpg/800px-Michael_Jackson_in_1988.jpg"
+           alt="Michael Jackson"
+           onerror="this.src='https://via.placeholder.com/600x900/1a1a1a/c9a84c?text=Michael+Jackson'">
+      <div class="card-overlay">
+        <h2>Michael Jackson</h2>
+        <span class="tag">El Rey del Pop</span>
+        <p class="cta">Ver más →</p>
+      </div>
+    </a>
+
+    <!-- Maneskin -->
+    <a href="pages/maneskin.html" class="artist-card">
+      <img class="card-img"
+           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/M%C3%A5neskin_at_Eurovision_Song_Contest_2021_-_Grand_Final_Red_Carpet_%285%29.jpg/800px-M%C3%A5neskin_at_Eurovision_Song_Contest_2021_-_Grand_Final_Red_Carpet_%285%29.jpg"
+           alt="Maneskin"
+           onerror="this.src='https://via.placeholder.com/600x900/1a1a1a/c9a84c?text=Maneskin'">
+      <div class="card-overlay">
+        <h2>Måneskin</h2>
+        <span class="tag">La Nueva Ola del Rock</span>
+        <p class="cta">Ver más →</p>
+      </div>
+    </a>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="home-footer">
+    <div class="divider-line"></div>
+    <p class="credit-main">Diseñado por los alumnos Luis Eduardo Arriaga Martinez |</p>
+    <p class="credit-sub">Con ayuda del profesor Jiménez</p>
+    <div class="divider-line"></div>
+  </footer>
+
+</body>
+</html>
