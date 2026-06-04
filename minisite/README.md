@@ -20,24 +20,6 @@ minisite/
     └── maneskin.html
 ```
 
-## Cómo subir a GitHub Pages
-
-1. Crea un repositorio en GitHub (p. ej. `musica-escolar`)
-2. Sube todos los archivos respetando la estructura de carpetas
-3. Ve a **Settings → Pages**
-4. En *Source*, selecciona la rama `main` y la carpeta `/ (root)`
-5. Haz clic en **Save**
-6. Tu sitio estará disponible en `https://tu-usuario.github.io/musica-escolar/`
-
-## Logo del colegio
-
-Coloca el logo del Colegio de Bachilleres en `images/logo-colegio.png`  
-y descomenta la línea en `index.html`:
-
-```html
-<!-- <img src="images/logo-colegio.png" alt="Logo"> -->
-```
-
 ## Fuentes de imágenes
 
 Las imágenes de artistas provienen de Wikimedia Commons (licencia libre).  
@@ -45,5 +27,5 @@ Las carátulas de álbumes también vienen de Wikimedia y Wikipedia.
 
 ## Créditos
 
-Diseñado por los alumnos **Luis, Paco y Juan**  
-Con ayuda del profesor **Jiménez**
+Diseñado por los alumnos **Luis Eduardo Arriaga Martinez | Mateo Sánchez Niño | Anwar Jared Rubio Fernández**  
+Con ayuda del profesor **J**
